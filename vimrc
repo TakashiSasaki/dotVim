@@ -11,3 +11,4 @@ set laststatus=2
 set autoread
 set incsearch
 
+autocmd BufEnter *.gs setfiletype javascript
