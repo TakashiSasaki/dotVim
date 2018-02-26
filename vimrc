@@ -22,4 +22,5 @@ highlight Comment ctermfg=cyan
 autocmd BufEnter *.gs setfiletype javascript
 autocmd BufEnter *.cnf setfiletype config
 autocmd BufEnter *.cnf set tabstop=8
+autocmd BufEnter Makefile set noexpandtab
 
