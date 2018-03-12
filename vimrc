@@ -22,6 +22,7 @@ highlight Comment ctermfg=cyan
 autocmd BufEnter *.gs setfiletype javascript
 autocmd BufEnter *.cnf setfiletype config
 autocmd BufEnter *.cnf set tabstop=8
+autocmd BufEnter Makefile set noexpandtab
 autocmd BufEnter Makefile setfiletype make
 
 " Note: Skip initialization for vim-tiny or vim-small.
@@ -45,8 +46,8 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " Refer to |:NeoBundle-examples|.
 " Note: You don't set neobundle setting in .gvimrc!
 NeoBundle 'https://github.com/leafgarland/typescript-vim.git'
-"NeoBundle 'https://github.com/clausreinke/typescript-tools.git'
 NeoBundle 'https://github.com/clausreinke/typescript-tools.vim'
+
 call neobundle#end()
 
 " Required:
