@@ -45,8 +45,8 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " Refer to |:NeoBundle-examples|.
 " Note: You don't set neobundle setting in .gvimrc!
 NeoBundle 'https://github.com/leafgarland/typescript-vim.git'
-NeoBundle 'https://github.com/clausreinke/typescript-tools.git'
-
+"NeoBundle 'https://github.com/clausreinke/typescript-tools.git'
+NeoBundle 'https://github.com/clausreinke/typescript-tools.vim'
 call neobundle#end()
 
 " Required:
