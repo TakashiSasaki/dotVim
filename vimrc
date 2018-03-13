@@ -15,6 +15,7 @@ set laststatus=2
 set autoread
 set browsedir=buffer
 set incsearch
+set hidden
 
 syntax on
 
