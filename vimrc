@@ -9,7 +9,7 @@ set nosmartindent
 set visualbell
 set number
 set showcmd
-set noswapfile
+"set noswapfile
 set cursorline
 set laststatus=2
 set autoread
