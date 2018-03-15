@@ -1,2 +1,4 @@
-dbext.vim
 neobundle.vim
+typescript-tools.vim
+typescript-vim
+vim-scala
