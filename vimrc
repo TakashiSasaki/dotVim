@@ -31,6 +31,6 @@ autocmd BufEnter *.scala setfiletype scala
 if 0 | endif
 
 source ~/.vim/neobundle.vim
-source ~/.vim/vimbootstrap.vim
+source ~/.vim/bootstrap.vim
 source ~/.vim/confirmquit.vim
 
