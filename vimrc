@@ -25,57 +25,12 @@ autocmd BufEnter *.cnf setfiletype config
 autocmd BufEnter *.cnf set tabstop=8
 autocmd BufEnter Makefile set noexpandtab
 autocmd BufEnter Makefile setfiletype make
+autocmd BufEnter *.scala setfiletype scala
 
 " Note: Skip initialization for vim-tiny or vim-small.
 if 0 | endif
 
-if &compatible
-  set nocompatible               " Be iMproved
-endif
-
-" Required:
-set runtimepath+=~/.vim/bundle/neobundle.vim/
-
-" Required:
-call neobundle#begin(expand('~/.vim/bundle/'))
-
-" Let NeoBundle manage NeoBundle
-" Required:
-NeoBundleFetch 'Shougo/neobundle.vim'
-
-" My Bundles here:
-" Refer to |:NeoBundle-examples|.
-" Note: You don't set neobundle setting in .gvimrc!
-NeoBundle 'https://github.com/leafgarland/typescript-vim.git'
-NeoBundle 'https://github.com/clausreinke/typescript-tools.vim'
-
-call neobundle#end()
-
-" Required:
-filetype plugin indent on
-
-" If there are uninstalled bundles found on startup,
-" this will conveniently prompt you to install them.
-NeoBundleCheck
-
-function! ConfirmQuit(writeFile)
-    if (a:writeFile)
-        if (expand('%:t')=="")
-            echo "Can't save a file with no name."
-            return
-        endif
-        :write
-    endif
-
-    if (winnr('$')==1 && tabpagenr('$')==1)
-        if (confirm("Do you really want to quit?", "&Yes\n&No", 2)==1)
-            :quit
-        endif
-    else
-        :quit
-    endif
-endfu
-
-cnoremap <silent> q<CR>  :call ConfirmQuit(0)<CR>
-cnoremap <silent> x<CR>  :call ConfirmQuit(1)<CR>
+source ~/.vim/neobundle.vim
+source ~/.vim/bootstrap.vim
+source ~/.vim/confirmquit.vim
 
