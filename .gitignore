@@ -2,4 +2,7 @@ bundle/NeoBundle.lock
 .vimrc.swp
 bugreport.txt
 plugged/
-bundle/
+bundle/.neobundle/
+bundle/typescript-vim/
+bundle/typescript-tools.vim/
+bundle/vim-scala/
