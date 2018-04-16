@@ -6,3 +6,4 @@ bundle/.neobundle/
 bundle/typescript-vim/
 bundle/typescript-tools.vim/
 bundle/vim-scala/
+.netrwhist
